@@ -46,8 +46,26 @@ svg,img { max-width: 100%; height: auto; }
 .ds-social li:first-child{ margin-left: 0; }
 .ds-social li a{ border-radius: 100%; color: #FFF; width: 24px; height: 24px; background-color: #F26464; display:flex; justify-content: center; align-items: center; text-align: center; font-size: 16px; }
 .ds-social li a:hover{ background-color: #000; color: #FFF; }
-.ds-contact-info {	margin-top: 20px;	font-size: 1.1rem;	line-height: 1.8;	color: #333;  }  
-.ds-contact-info i {	color: #fc5f5f;	margin-right: 8px;  }
+.ds-contact-section {
+	margin-top: 40px;
+  }
+  
+  .ds-contact-list {
+	margin-top: 0;
+	padding-top: 0;
+  }
+  
+  .ds-contact-list li {
+	margin-bottom: 8px;
+  }
+  
+  .ds-contact-list li span {
+	font-size: 16px;
+	font-weight: 400;
+	color: #222;
+	display: inline-block;
+  }
+  
   /*-----------------------------------------------------------------
   2. >>> Banner Style
 ----------------------------------------------------------------*/

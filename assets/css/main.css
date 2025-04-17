@@ -80,6 +80,8 @@ svg,img { max-width: 100%; height: auto; }
 ----------------------------------------------------------------*/
 .ds-experience-section{ padding-bottom: 120px; }
 .ds-experience-list section{ padding-right: 70px; }
+.ds-experience-list section{ margin-bottom: 40px; }
+.ds-experience-list > div{ padding-bottom: 20px; }  
 .ds-experience-list{ padding-top: 15px; }
 .ds-officename{ font-size: 24px; font-weight: 300; margin-bottom:10px; }
 .ds-experience-list span{ display: block; }

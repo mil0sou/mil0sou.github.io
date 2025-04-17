@@ -1,41 +1,69 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background: #f4f4f9;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
     color: #333;
-    animation: fadeIn 2s ease-in;
+    line-height: 1.6;
+    padding: 2rem;
+    animation: fadeIn 1s ease-in;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
 }
 
 header {
-    background: #4a90e2;
-    color: white;
-    padding: 2rem;
     text-align: center;
-    animation: slideDown 1s ease-out;
+    margin-bottom: 2rem;
 }
 
-section {
-    margin: 2rem;
-    padding: 1rem 2rem;
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #2c3e50;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #555;
+    margin-top: 0.5rem;
+}
+
+.card {
     background: white;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    animation: fadeInUp 1s ease-out;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.1);
 }
 
 h2 {
-    color: #4a90e2;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #0077cc;
 }
 
 ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding-left: 1rem;
 }
 
-ul li {
-    margin-bottom: 0.5rem;
+ul li::before {
+    content: "• ";
+    color: #0077cc;
 }
 
 @keyframes fadeIn {
@@ -43,12 +71,21 @@ ul li {
     to { opacity: 1; }
 }
 
-@keyframes slideDown {
-    from { transform: translateY(-30px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
+.fade-in {
+    animation: fadeIn 1s ease-in;
 }
 
-@keyframes fadeInUp {
-    from { transform: translateY(20px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.slide-up {
+    animation: slideUp 0.8s ease-out;
 }
